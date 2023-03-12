@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baycungban</title>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="background">
+      <header class="header">
+        <div class="header-logo">
+          <p>Baycungban</p>
+          <img src="images/vietnamflag.jpg" alt="vietnam" />
+          <img src="images/usaflag.jpg" alt="usa" />
+        </div>
+        <div>
+          <a href="#">Promotion</a>
+          <a href="#">Flight Schedule</a>
+          <a href="#">About Us</a>
+          <a href="#">Payment Guide</a>
+        </div>
+        <button>Booking now</button>
+      </header>
+      <!-- banner -->
+      <div class="banner">
+        Hello!<br />
+        Where are <br />
+        you <span>flying</span> to
+      </div>
+    </div>
+    <!-- form search -->
+    <div class="main">
+      <form action="list.html">
+        <!-- form type -->
+        <div class="form-type">
+          <div>
+            <input type="radio" id="oneway" name="way" value="oneway" />
+            <label for="oneway">One-way / Round-trip</label>
+            <input type="radio" id="multiCity" name="way" value="multiCity" />
+            <label for="multiCity">Multi-city</label>
+          </div>
+          <div class="form-type__people">
+            <input
+              type="number"
+              id="adult"
+              name="adult"
+              width="10px"
+              min="0"
+              value="1"
+            />
+            <label>Adult, </label>
+            <input
+              type="number"
+              id="children"
+              name="children"
+              min="0"
+              value="0"
+            />
+            <label>Children</label>
+          </div>
+          <div>
+            <select name="type" class="form-type__type">
+              <option value="businessclass">Business Class</option>
+              <option value="firstclass">First Class</option>
+              <option value="specialeconomyclass">Special Economy Class</option>
+              <option value="economyclass">Economy Class</option>
+            </select>
+          </div>
+        </div>
+        <!-- form place -->
+        <div class="form-place">
+          <div class="from-place">
+            <p>FROM</p>
+            <select name="from">
+              <option value="danang"><span>Da Nang</span> , Viet Nam</option>
+              <option value="hanoi">Ha Noi, Viet Nam</option>
+              <option value="hochiminh">Ho Chi Minh, Viet Nam</option>
+              <option value="noibai">Noi Bai, Viet Nam</option>
+            </select>
+          </div>
+          <span class="icon-exchange">
+            <i class="fas fa-exchange-alt"></i>
+          </span>
+          <div class="to-place">
+            <p>TO</p>
+            <select name="from">
+              <option value="hochiminh">Ho Chi Minh, Viet Nam</option>
+              <option value="danang">Da Nang, Viet Nam</option>
+              <option value="hanoi">Ha Noi, Viet Nam</option>
+              <option value="noibai">Noi Bai, Viet Nam</option>
+            </select>
+          </div>
+          <!-- form date -->
+          <div class="form-date">
+            <div>
+              <p>DEPARTURE</p>
+              <input type="date" name="departure" id="from-date" />
+            </div>
+            <div>
+              <p>RETURN</p>
+              <input type="date" name="return" id="to-date" />
+            </div>
+          </div>
+        </div>
+        <!-- button search -->
+        <button class="btn-search">
+          Search Flights <i class="fas fa-arrow-right"></i>
+        </button>
+      </form>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+      <div>
+        <p><i class="fas fa-phone"></i> Call us:+84 908 02 02 58</p>
+        <p><i class="far fa-envelope"></i> Email: chucinog@gmail.com</p>
+      </div>
+      <div>
+        Follow us ---- <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </footer>
+    <script src="datapicker.js"></script>
+  </body>
+</html>
